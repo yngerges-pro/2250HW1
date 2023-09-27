@@ -1,0 +1,139 @@
+body {
+    /* 1 */
+    background-image: url("http://i.imgur.com/nJnD26r.gif");
+    /* 2 */ 
+    background-repeat: no-repeat;
+    /* 3 */
+    background-size: contain;
+    /* 4 */
+    background-color: black;
+}
+
+p, h1, h2, a, li, hr, small, mark, em, strong, b, i, pre, dt, dd   {
+    /* 5 */
+    color:rgb(255, 255, 255);
+    /* 6 */
+    text-shadow: 2px 2px 4px rgb(249, 3, 3);
+}
+
+div.Header{
+    background-color:rgb(0, 0, 0,0.8);
+    /* 7 */
+    position:fixed;
+    /* 8 */
+    top: 0;
+    /* 9 */ 
+    left: 0;
+    /* 10 */ 
+    right: 0;
+    /* 11 */
+    text-align: center;
+    /* 12 */
+    font-size: 12px;
+    /* 13 */
+    font-family: Arial, Helvetica, sans-serif;
+    /* 14 */
+    font-weight: bold;
+    /* 15 */
+    width: 100%;
+    /* 16 */
+    margin: 1px;
+}
+
+br {
+    /* 17 */
+    line-height: 200px;
+}
+
+a.main, a.computer, a.phone {
+    /* 18 */
+    border-style: solid;
+    /* 19 */
+    padding: 1vh 1vw;
+    /* 20 */
+    border-color: rgb(60, 76, 70);
+    /* 21 */
+    background-color: rgb(64, 255, 191);
+    /* 22  */
+    border: none;
+    /* 23 */
+    text-align: center;
+    /* 24 */
+    display: inline-block;
+    /* 25 */
+    border-radius: 15px; /* Adjust the value to control the curvature */
+    /* 26 */
+    box-shadow: 3px 3px 5px 0 rgb(72, 216, 144);
+
+    color: white; /* Text color */
+    /* 27 */
+    text-decoration: none;
+    /* 28 */
+    text-transform: uppercase;
+}
+
+.flexbox {
+
+    display: flex;
+    /* 29 */
+    justify-content: space-between;
+    /* 30 */
+    flex: 1; /* Grow and shrink equally */
+
+    padding: 10px 20px;
+
+    border: none;
+    /* 31 */
+    cursor: pointer;
+    /* 32 */
+    height: 4vh;    
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+.image:hover {
+    /* 33 */
+    animation: spin 2s infinite; /* Apply the spin animation on hover */
+}
+
+@keyframes spin {
+    0% {
+    /* 34 */
+    transform: rotate(0deg); /* Start with no rotation */
+    }
+    100% {
+    transform: rotate(360deg); /* Rotate 360 degrees */
+    }
+}
+
+.reasons{
+    /* 35 */
+    overflow-wrap: normal;
+    /* 36 */
+    word-wrap: break-word;
+    /* 37 */
+    word-spacing: 5px;
+    /* 38 */
+    letter-spacing: 2px;
+    /* 39 */
+    text-indent: 30px ;
+}
+
+a.main:hover, a.computer:hover, a.phone:hover {
+    /* 40 */
+    opacity: 0.5;
+
+}
+
+@keyframes fade {
+    0% {
+    opacity: 1; /* Start with no rotation */
+    }
+    100% {
+    opacity : 0.5; /* Rotate 360 degrees */
+    }
+}
+
